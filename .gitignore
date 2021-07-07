@@ -29,4 +29,6 @@ phpunit.phar
 # phpunit cache
 .phpunit.result.cache
 
+#node_modules
+/node_modules
 
