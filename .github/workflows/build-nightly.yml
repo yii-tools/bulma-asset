@@ -1,10 +1,8 @@
-name: Build Nightly
+name: build-nightly
 
 on:
   schedule:
     - cron: '0 2 * * *' # run at 2 AM UTC
-
-name: build-nightly
 
 jobs:
   tests:
