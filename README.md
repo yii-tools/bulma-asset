@@ -34,7 +34,7 @@ do not register any Asset so you must register them in your application to be us
 - [FilePluginAsset](src/FilePluginAsset.php): Asset file for File include `Js` files.
 - [FilePluginCdnAsset](src/FilePluginCdnAsset.php): Asset file for Cdn File include `Js` files.
 - [MessagePluginAsset](src/MessagePluginAsset.php): Asset file for Message include `Js` files.
-- [MessagePluginCdnAsset](src/MessagePluginCdnAsset.php): Asset file for Cdn Message include `Js` files.]
+- [MessagePluginCdnAsset](src/MessagePluginCdnAsset.php): Asset file for Cdn Message include `Js` files.
 - [ModalPluginAsset](src/ModalPluginAsset.php): Asset file for Modal include `Js` files.
 - [ModalPluginCdnAsset](src/ModalPluginCdnAsset.php): Asset file for Cdn Modal include `Js` files.
 - [NavBarsPluginAsset](src/NavBarsPluginAsset.php): Asset file for NavBars include `Js` files.
