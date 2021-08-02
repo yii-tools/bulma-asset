@@ -9,7 +9,6 @@
 [![Total Downloads](https://poser.pugx.org/yii-extension/asset-bulma/downloads.png)](https://packagist.org/packages/yii-extension/asset-bulma)
 [![Build Status](https://github.com/yii-extension/asset-bulma/workflows/build/badge.svg)](https://github.com/yii-extension/asset-bulma/actions?query=workflow%3Abuild)
 [![static analysis](https://github.com/yii-extension/asset-bulma/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/asset-bulma/actions?query=workflow%3A%22static+analysis%22)
-[![type-coverage](https://shepherd.dev/github/yii-extension/asset-bulma/coverage.svg)](https://shepherd.dev/github/yii-extension/asset-bulma)
 
 ## Installation
 
