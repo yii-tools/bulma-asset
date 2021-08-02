@@ -44,7 +44,7 @@ do not register any Asset so you must register them in your application to be us
 - [PanelPluginAsset](src/PanelPluginAsset.php): Asset file for Panel include `Js` files.
 - [PanelPluginCdnAsset](src/PanelPluginCdnAsset.php): Asset file for Cdn Panel include `Js` files.
 - [PanelTabsPluginAsset](src/PanelTabsPluginAsset.php): Asset file for PanelTabs include `Js` files.
-- [PanelTabsPluginCdnAsset](src/PanelTabsPluginCdnAsset.php): Asset file for Cdn PanelTabs include `Js` files.]
+- [PanelTabsPluginCdnAsset](src/PanelTabsPluginCdnAsset.php): Asset file for Cdn PanelTabs include `Js` files.
 
 For more information [Bulma](https://bulma.io/documentation/overview/start/).
 
