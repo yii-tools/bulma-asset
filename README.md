@@ -17,92 +17,91 @@
 composer require asset-bulma
 ```
 
-## Usage
-If you want to add the asset to the entire application, you must add it in layout `main.php`, in case of using it only in one view you must add it to it. 
+## Using assets
 
-### Asset Bulma:
+Bulma is a CSS framework that provides all the CSS to customize your application, the widgets by default
+do not register any Asset so you must register them in your application to be used, since you can simply use the default CSS file layout, or build your own custom CCS.
+
+`Three Assets are provided:`
+
+- [BulmaAsset](src/BulmaAsset.php): Asset file for [Bulma](https://bulma.io/documentation/overview/start/) Css Framework include `Css` files.
+- [BulmaHelpersAsset](src/BulmaHelperAsset.php): Asset file for [BulmaHelper library](https://github.com/jmaczan/bulma-helpers) include `Css` files.
+- [VizuaalogJsAsset](src/VizuaalogJsAsset.php): Asset file for [VizuaalogJs library](https://github.com/VizuaaLOG/BulmaJS) include `Js` files.
+- [VizuaalogJsCdnAsset](src/VizuaalogJsCdnAsset.php): Asset file for [VizuaalogJs library](https://www.jsdelivr.com/package/npm/@vizuaalog/bulmajs) include `Js` files.
+- [AlertPluginAsset](src/AlertPluginAsset.php): Asset file for Alert include `Js` files.
+- [AlertPluginCdnAsset](src/AlertPluginCdnAsset.php): Asset file for Cdn Alert include `Js` files.
+- [DropdownPluginAsset](src/DropdownPluginAsset.php): Asset file for Dropdown include `Js` files.
+- [DropdownPluginCdnAsset](src/DropdownPluginCdnAsset.php): Asset file for Cdn Dropdown include `Js` files.
+- [FilePluginAsset](src/FilePluginAsset.php): Asset file for File include `Js` files.
+- [FilePluginCdnAsset](src/FilePluginCdnAsset.php): Asset file for Cdn File include `Js` files.
+- [MessagePluginAsset](src/MessagePluginAsset.php): Asset file for Message include `Js` files.
+- [MessagePluginCdnAsset](src/MessagePluginCdnAsset.php): Asset file for Cdn Message include `Js` files.]
+- [ModalPluginAsset](src/ModalPluginAsset.php): Asset file for Modal include `Js` files.
+- [ModalPluginCdnAsset](src/ModalPluginCdnAsset.php): Asset file for Cdn Modal include `Js` files.
+- [NavBarsPluginAsset](src/NavBarsPluginAsset.php): Asset file for NavBars include `Js` files.
+- [NavBarsPluginCdnAsset](src/NavBarsPluginCdnAsset.php): Asset file for Cdn NavBars include `Js` files.
+- [NotificationPluginAsset](src/NotificationPluginAsset.php): Asset file for Notification include `Js` files.
+- [NotificationPluginCdnAsset](src/NotificationPluginCdnAsset.php): Asset file for Cdn Notification include `Js` files.
+- [PanelPluginAsset](src/PanelPluginAsset.php): Asset file for Panel include `Js` files.
+- [PanelPluginCdnAsset](src/PanelPluginCdnAsset.php): Asset file for Cdn Panel include `Js` files.
+- [PanelTabsPluginAsset](src/PanelTabsPluginAsset.php): Asset file for PanelTabs include `Js` files.
+- [PanelTabsPluginCdnAsset](src/PanelTabsPluginCdnAsset.php): Asset file for Cdn PanelTabs include `Js` files.]
+
+For more information [Bulma](https://bulma.io/documentation/overview/start/).
+
+To use widgets only, register `BulmaAsset::class`, which we can do in several ways explained below.
+
+`Note:` You need to have [npm](https://docs.npmjs.com/getting-started) installed, this extension uses [foxy](https://github.com/fxpio/foxy) to install assets. 
+
+`Register asset in view layout or individual view:`
+
+By registering the Asset in the `layout/main.php` it will be available for all views.
+
+If you need it registered for individual view (such as `views/user/login.php`) only,
+register it in that view.
+
+
 ```php
-<?php
-
-declare(strict_types=1);
-
 use Yii\Extension\Asset\Bulma\BulmaAsset;
 
 /**
- * @var AssetManager $assetManager
- * @var WebView $this
+ * @var Yiisoft\Assets\AssetManager $assetManager
+ * @var Yiisoft\View\WebView $this
  */
 
-/* Register assets in view */
-$assetManager->register([BulmaAsset::class]);
+$assetManager->register([
+    BulmaAsset::class,
+]);
 
-$this->addCssFiles($assetManager->getCssFiles());
-$this->addJsFiles($assetManager->getJsFiles());
-?>
+$this->setCssFiles($assetManager->getCssFiles());
+$this->setJsFiles($assetManager->getJsFiles());
 ```
 
-### [Asset Bulma-Helpers](https://github.com/jmaczan/bulma-helpers):
-```php
-<?php
+`Register asset in application params:`
 
-declare(strict_types=1);
-
-use Yii\Extension\Asset\Bulma\BulmaHelpersAsset;
-
-/**
- * @var AssetManager $assetManager
- * @var WebView $this
- */
-
-/* Register assets in view */
-$assetManager->register([BulmaHelpersAsset::class]);
-
-$this->addCssFiles($assetManager->getCssFiles());
-$this->addJsFiles($assetManager->getJsFiles());
-?>
-```
-
-### [Asset @Vizuaalog-Bulmajs](https://github.com/VizuaaLOG/BulmaJS):
-```php
-<?php
-
-declare(strict_types=1);
-
-use Yii\Extension\Asset\Bulma\VizuaalogJsAsset;
-
-/**
- * @var AssetManager $assetManager
- * @var WebView $this
- */
-
-/* Register assets in view bundlejs */
-$assetManager->register([VizuaalogJsAsset::class]);
-
-$this->addCssFiles($assetManager->getCssFiles());
-$this->addJsFiles($assetManager->getJsFiles());
-?>
-```
+You can register asset in the assets parameters, (by default, this is `config/packages/yiisoft/assets/params.php`).
+Asset will be available for all views of this application.
 
 ```php
-<?php
+use Yii\Extension\Asset\Bulma\BulmaAsset;
 
-declare(strict_types=1);
-
-use Yii\Extension\Asset\Bulma\AlertPluginAsset;
-
-/**
- * @var AssetManager $assetManager
- * @var WebView $this
- */
-
-/* Register assets in view plugin individually */
-$assetManager->register([AlertPluginAsset::class]);
-
-$this->addCssFiles($assetManager->getCssFiles());
-$this->addJsFiles($assetManager->getJsFiles());
-?>
+'yiisoft/asset' => [
+    'assetManager' => [
+        'register' => [
+            BulmaAsset::class,
+        ],
+    ],
+],
 ```
 
+Then in `layout/main.php`:
+
+```php
+/* @var Yiisoft\View\WebView $this */
+
+$this->setCssFiles($assetManager->getCssFiles());
+$this->setJsFiles($assetManager->getJsFiles());
+```
 
 ### Unit testing
 
