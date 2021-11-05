@@ -13,7 +13,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "foxy/foxy": "^1.1@dev",
-        "yiisoft/assets": "^1.0.0",
+        "yiisoft/assets": "^2.0.0",
         "yiisoft/files": "^1.0.0"
     },
     "require-dev": {
