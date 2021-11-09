@@ -3,6 +3,6 @@
     "dependencies": {
         "@vizuaalog/bulmajs": "^0.12.0",
         "bulma": "^0.9.3",
-        "bulma-helpers": "*"
+        "bulma-helpers": "^0.4.2"
     }
 }

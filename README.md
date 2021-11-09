@@ -68,36 +68,7 @@ use Yii\Extension\Asset\Bulma\BulmaAsset;
  * @var Yiisoft\View\WebView $this
  */
 
-$assetManager->register([
-    BulmaAsset::class,
-]);
-
-$this->setCssFiles($assetManager->getCssFiles());
-$this->setJsFiles($assetManager->getJsFiles());
-```
-
-`Register asset in application params:`
-
-You can register asset in the assets parameters, (by default, this is `config/packages/yiisoft/assets/params.php`).
-Asset will be available for all views of this application.
-
-```php
-use Yii\Extension\Asset\Bulma\BulmaAsset;
-
-'yiisoft/asset' => [
-    'assetManager' => [
-        'register' => [
-            BulmaAsset::class,
-        ],
-    ],
-],
-```
-
-Then in `layout/main.php`:
-
-```php
-/* @var Yiisoft\View\WebView $this */
-
+$assetManager->register(BulmaAsset::class);
 $this->setCssFiles($assetManager->getCssFiles());
 $this->setJsFiles($assetManager->getJsFiles());
 ```

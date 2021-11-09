@@ -97,7 +97,7 @@ final class AssetTest extends TestCase
 
         $this->assertEmpty($this->getRegisteredBundles($this->assetManager));
 
-        $this->assetManager->register([$asset]);
+        $this->assetManager->registerMany([$asset]);
 
         if ($depend !== null && $type === 'Css') {
             $dependUrl = $this->assetPublisher->getPublishedUrl($depend->sourcePath) . '/' . $depend->css[0];
