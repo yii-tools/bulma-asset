@@ -19,7 +19,7 @@
     "require-dev": {
         "psr/log": "^1.1",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.8",
+        "vimeo/psalm": "^5.5",
         "yiisoft/aliases": "^2.0",
         "yiisoft/test-support": "^1.0@dev"
     },
