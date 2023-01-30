@@ -8,6 +8,7 @@ on:
       - '.gitattributes'
       - 'infection.json.dist'
       - 'phpunit.xml.dist'
+      - 'psalm.xml'
 
   push:
     paths-ignore:
@@ -18,12 +19,13 @@ on:
       - '.gitattributes'
       - 'infection.json.dist'
       - 'phpunit.xml.dist'
+      - 'psalm.xml'
 
-name: static analysis
+name: dependency-check
 
 jobs:
-  psalm:
-    uses: yiisoft/actions/.github/workflows/psalm.yml@master
+  composer-require-checker:
+    uses: yiisoft/actions/.github/workflows/composer-require-checker.yml@master
     with:
       os: >-
         ['ubuntu-latest']

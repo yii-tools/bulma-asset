@@ -1,44 +1,48 @@
 {
-    "name": "yii-extension/asset-bulma",
+    "name": "yii-tools/bulma-asset",
     "type": "library",
-    "description": "Bulma Asset for Yii3",
+    "description": "Asset for Bulma Free for YiiFramework v.3.0.",
     "keywords": [
-        "yii3",
+        "yii-tools",
+        "asset",
         "bulma",
-        "asset"
+        "yii3"
     ],
-    "license": "BSD-3-Clause",
+    "license": "mit",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4|^8.0",
-        "foxy/foxy": "^1.1@dev",
-        "yiisoft/assets": "^2.0",
-        "yiisoft/files": "^1.0"
+        "php": "^8.1",
+        "foxy/foxy": "^1.2",
+        "yiisoft/assets": "^3.0",
+        "yiisoft/files": "^2.0"
     },
     "require-dev": {
-        "psr/log": "^1.1",
+        "maglnet/composer-require-checker": "^4.3",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.8",
-        "yiisoft/aliases": "^2.0",
-        "yiisoft/test-support": "^1.0@dev"
+        "roave/infection-static-analysis-plugin": "^1.28",
+        "vimeo/psalm": "^5.6"
     },
     "autoload": {
         "psr-4": {
-            "Yii\\Extension\\Asset\\Bulma\\": "src"
+            "Yii\\Bulma\\Asset\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yii\\Extension\\Asset\\Bulma\\Tests\\": "tests"
+            "Yii\\Bulma\\Asset\\Tests\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-main": "1.0.x-dev"
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "foxy/foxy": true,
+            "infection/extension-installer": true
+        }
     }
 }
