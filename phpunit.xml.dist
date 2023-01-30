@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<phpunit bootstrap="vendor/autoload.php"
-         colors="true"
-         verbose="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         stopOnFailure="false">
+<phpunit
+  bootstrap="vendor/autoload.php"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  stopOnFailure="false"
+  verbose="true"
+>
   <php>
     <ini name="error_reporting" value="-1" />
   </php>
@@ -21,7 +23,7 @@
   </coverage>
 
   <testsuites>
-    <testsuite name="Template">
+    <testsuite name="Bulma-Asset">
       <directory>./tests</directory>
     </testsuite>
   </testsuites>
