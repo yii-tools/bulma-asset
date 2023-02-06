@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.3",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10.0",
         "roave/infection-static-analysis-plugin": "^1.28",
         "vimeo/psalm": "^5.6"
     },
