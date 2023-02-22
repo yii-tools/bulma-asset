@@ -14,13 +14,13 @@
     "require": {
         "php": "^8.1",
         "foxy/foxy": "^1.2",
-        "yiisoft/assets": "^3.0",
+        "yiisoft/assets": "^4.0",
         "yiisoft/files": "^2.0"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.3",
-        "phpunit/phpunit": "^9.5",
-        "roave/infection-static-analysis-plugin": "^1.28",
+        "phpunit/phpunit": "^10.0",
+        "roave/infection-static-analysis-plugin": "^1.29",
         "vimeo/psalm": "^5.6"
     },
     "autoload": {

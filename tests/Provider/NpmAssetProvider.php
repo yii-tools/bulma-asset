@@ -11,7 +11,7 @@ final class NpmAssetProvider
     /**
      * @return array array of asset bundles.
      */
-    public function assetBundles(): array
+    public static function assetBundles(): array
     {
         return [
             [

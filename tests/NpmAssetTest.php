@@ -17,7 +17,7 @@ final class NpmAssetTest extends TestCase
     use TestTrait;
 
     /**
-     * @dataProvider \Yii\Bulma\Asset\Tests\Provider\NpmAssetProvider::assetBundles()
+     * @dataProvider \Yii\Bulma\Asset\Tests\Provider\NpmAssetProvider::assetBundles
      *
      * @throws InvalidConfigException
      *
