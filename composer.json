@@ -21,7 +21,8 @@
         "maglnet/composer-require-checker": "^4.3",
         "phpunit/phpunit": "^10.0",
         "roave/infection-static-analysis-plugin": "^1.29",
-        "vimeo/psalm": "^5.6"
+        "vimeo/psalm": "^5.8",
+        "yii-tools/support": "^1.0@dev"
     },
     "autoload": {
         "psr-4": {
