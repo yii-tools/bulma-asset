@@ -13,14 +13,14 @@ file: ./resources/views/layout/main.php
 
 declare(strict_types=1);
 
-use Yii\Bulma\Asset\Npm\Dev\BulmaAsset;
+use Yii\Bulma\Asset\BulmaDevAsset;
 
 /**
  * @var \Yiisoft\Assets\AssetManager $assetManager
  */
 
 // Register the asset bundle with a asset manager component.
-$assetManager->register(BulmaAsset::class);
+$assetManager->register(BulmaDevAsset::class);
 
 // Set parameters for the registered asset bundle a view component.
 $this->addCssFiles($assetManager->getCssFiles());
@@ -39,13 +39,13 @@ file: ./config/params.php
 
 declare(strict_types=1);
 
-use Yii\Bulma\Asset\Cdn\BulmaAsset;
+use Yii\Bulma\Asset\BulmaCdnAsset;
 
 return [
     'yiisoft/assets' => [
         'assetManager' => [
             'register' => [
-                BulmaAsset::class,
+                BulmaCdnAsset::class,
             ],
         ],
     ],

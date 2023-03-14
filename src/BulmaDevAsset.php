@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Yii\Bulma\Asset\Npm\Dev;
+namespace Yii\Bulma\Asset;
 
 use Yiisoft\Assets\AssetBundle;
 use Yiisoft\Files\PathMatcher\PathMatcher;
 
-final class BulmaAsset extends AssetBundle
+final class BulmaDevAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
@@ -18,11 +18,6 @@ final class BulmaAsset extends AssetBundle
     {
         $pathMatcher = new PathMatcher();
 
-        $this->publishOptions = [
-            'filter' => $pathMatcher->only(
-                '**css/bulma.css',
-                '**css/bulma.css.map',
-            ),
-        ];
+        $this->publishOptions = ['filter' => $pathMatcher->only('**css/bulma.css', '**css/bulma.css.map')];
     }
 }
