@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yii\Bulma\Asset\Tests;
+namespace Yii\Assets\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Yii\Bulma\Asset\Tests\Support\TestTrait;
+use Yii\Assets\Tests\Support\TestTrait;
 use Yiisoft\Assets\Exception\InvalidConfigException;
 use Yiisoft\Files\PathMatcher\PathMatcher;
 
@@ -17,7 +17,7 @@ final class NpmAssetTest extends TestCase
     use TestTrait;
 
     /**
-     * @dataProvider \Yii\Bulma\Asset\Tests\Provider\NpmAssetProvider::assetBundles
+     * @dataProvider \Yii\Assets\Tests\Provider\NpmAssetProvider::assetBundles
      *
      * @throws InvalidConfigException
      *

@@ -25,7 +25,7 @@ composer require yii-tools/bulma-asset
 
 ## Usage
 
-[Check the documentation docs](/docs/install.md) to learn about usage.
+[Check the documentation docs](/docs/README.md) to learn about usage.
 
 ## Testing
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yii\Bulma\Asset\Tests\Provider;
+namespace Yii\Assets\Tests\Provider;
 
-use Yii\Bulma\Asset;
+use Yii\Assets;
 
 final class NpmAssetProvider
 {
@@ -14,8 +14,8 @@ final class NpmAssetProvider
     public static function assetBundles(): array
     {
         return [
-            ['Css', Asset\BulmaDevAsset::class],
-            ['Css', Asset\BulmaMinAsset::class],
+            ['Css', Assets\BulmaDev::class],
+            ['Css', Assets\BulmaProd::class],
         ];
     }
 }

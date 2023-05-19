@@ -13,14 +13,14 @@ file: ./resources/views/layout/main.php
 
 declare(strict_types=1);
 
-use Yii\Bulma\Asset\BulmaDevAsset;
+use Yii\Assets\BulmaDev;
 
 /**
  * @var \Yiisoft\Assets\AssetManager $assetManager
  */
 
 // Register the asset bundle with a asset manager component.
-$assetManager->register(BulmaDevAsset::class);
+$assetManager->register(BulmaDev::class);
 
 // Set parameters for the registered asset bundle a view component.
 $this->addCssFiles($assetManager->getCssFiles());
@@ -39,13 +39,13 @@ file: ./config/params.php
 
 declare(strict_types=1);
 
-use Yii\Bulma\Asset\BulmaCdnAsset;
+use Yii\Assets\BulmaCdn;
 
 return [
     'yiisoft/assets' => [
         'assetManager' => [
             'register' => [
-                BulmaCdnAsset::class,
+                BulmaCdn::class,
             ],
         ],
     ],
@@ -54,4 +54,5 @@ return [
 
 ## Using npm packages
 
-[npm](https://www.npmjs.com/) packages are installed via [fxpio/foxy](https://github.com/fxpio/foxy) and are available in the `node_modules` directory. 
+You can install [npm](https://www.npmjs.com/) packages [fxpio/foxy](https://github.com/fxpio/foxy),
+and they will be available in the `node_modules` directory.
