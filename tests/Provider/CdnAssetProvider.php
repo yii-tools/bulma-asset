@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yii\Bulma\Asset\Tests\Provider;
+namespace Yii\Assets\Tests\Provider;
 
-use Yii\Bulma\Asset\BulmaCdnAsset;
+use Yii\Assets\BulmaCdn;
 
 final class CdnAssetProvider
 {
@@ -14,7 +14,7 @@ final class CdnAssetProvider
     public static function assetBundles(): array
     {
         return [
-            ['Css', BulmaCdnAsset::class],
+            ['Css', BulmaCdn::class],
         ];
     }
 }

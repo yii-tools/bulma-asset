@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yii\Bulma\Asset\Tests;
+namespace Yii\Assets\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Yii\Bulma\Asset\Tests\Support\TestTrait;
+use Yii\Assets\Tests\Support\TestTrait;
 use Yiisoft\Assets\Exception\InvalidConfigException;
 
 /**
@@ -16,7 +16,7 @@ final class CdnAssetTest extends TestCase
     use TestTrait;
 
     /**
-     * @dataProvider \Yii\Bulma\Asset\Tests\Provider\CdnAssetProvider::assetBundles
+     * @dataProvider \Yii\Assets\Tests\Provider\CdnAssetProvider::assetBundles
      *
      * @psalm-suppress InvalidStringClass
      * @psalm-suppress MixedArrayOffset
