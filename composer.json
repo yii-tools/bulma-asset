@@ -35,11 +35,6 @@
             "Yii\\Assets\\Tests\\": "tests"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.0.x-dev"
-        }
-    },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
